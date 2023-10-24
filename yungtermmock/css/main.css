@@ -1,0 +1,293 @@
+@font-face {
+        font-family: San Marco;
+        src: url(../fonts/blkltr/blkltr.otf);
+}
+@font-face {
+        font-family: Basic Medium;
+        src: url(../fonts/basic/basic-medium.otf);
+}
+@font-face {
+        font-family: Basic Regular;
+        src: url(../fonts/basic/basic-regular.otf);
+}
+@font-face {
+        font-family: Circular Bold;
+        src: url(../fonts/circ/circ-bold.otf);
+}
+@font-face {
+        font-family: FreightBig-Black-Italic;
+        src: url(../fonts/freight/FreightBig-Black.otf);
+}
+@font-face {
+        font-family: oldskool1;
+        src: url(../fonts/oldskool/oldskool1.ttf);
+}
+@font-face {
+        font-family: VCR1;
+        src: url(../fonts/vcr/VCR1.ttf);
+}
+@font-face {
+        font-family: VCR2;
+        src: url(../fonts/vcr/VCR2.ttf);
+}
+
+
+html {
+  font-size: 10px;
+
+}
+
+body{
+  display:block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+  }
+
+a:hover {
+    text-decoration: none;
+    color: #000;
+    transition: all .1s ease;
+    opacity: .5;
+}
+
+#header {
+  width: 100%;
+  height: 80px;
+  background-color:white;
+  font-family: VCR1;
+}
+
+#main_title {
+  font-size: 50px;
+}
+
+.splash_container {
+  padding-top: 0;
+  display:flex;
+  justify-content:center;
+
+   
+}
+
+#myPicture {
+   position: absolute;
+   margin-top: 80px;
+   z-index: 90;
+}
+
+
+.keys {
+  width: 976px;
+  position: absolute;
+ 
+
+  /*left: 112px;
+  top: 50%; 
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  left: 50%; 
+  margin: auto; */
+}
+
+.key {
+  height: 160px;
+  width: 165px;
+  margin: 35px;
+  background-color: white;
+  border: 2px solid black;
+  float: left;
+  transition: all .18s ease;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+.shadows {
+  width: 976px;
+  position: absolute;
+  top: 135px;
+  /*left: 112px;
+  top: 50%; 
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  left: 50%; 
+  margin: auto; */
+  z-index:-999999;
+  padding-left: 47px;
+
+}
+
+.shadow {
+  height: 160px;
+  width: 165px;
+  margin: 35px;
+  border: 2px solid transparent;
+  float: left;
+  z-index: -200;
+  
+}
+
+h6 {
+  font-size: 90px;
+  position: relative;
+  bottom: 185px;
+}
+
+.desc-tag{
+  width: 976px;
+  height: 702px;
+  position: relative;
+  display: table;
+  top: -18px;
+  left: 0;
+
+}
+.desc {
+  
+  height: 160px;
+  width: 165px;
+  margin: 35px;
+  border: 2px solid transparent;
+  display: inline-block;
+  font-family: VCR1;
+  font-size: 14px;
+}
+
+
+.playing {
+  transform: scale(.98);
+  font-family:'Times New Roman', Times, serif;
+  font-style: italic;
+  color:white;
+  background-color:black;
+  border-color: white;
+ 
+}
+
+#myPicture {
+    /* margin: 40px; */
+    /*position: absolute;*/
+    /* top: 50px; */
+   /* left: 215px;*/
+   margin-bottom: 350px;
+}
+
+.scroll-container {
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+}
+
+.scroll-indicator {
+  width: 24px;
+  height: 24px;
+  margin: 16px auto;
+  
+  
+  border-right: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+  transform: rotate(45deg);
+  animation-duration: 2s;
+  animation-name: fade;
+  animation-iteration-count: infinite;animation-timing-function: linear;
+}
+
+@keyframes fade {
+    0% {
+      transform: rotate(45deg);
+      opacity: 1;
+    }
+    75% {
+      transform: rotate(45deg) translateY(-6px) translateX(-6px);
+      opacity: 0;
+    }
+    100% {
+    opacity: 0;
+    }
+}
+
+
+
+.shows {
+  
+  /*background-image: radial-gradient(circle farthest-side at center, #1100FF 0%, #FFFFFF 50%);*/
+  display: block;
+  width: 100%;
+  height: 980px;
+  position:relative;
+  
+ 
+}
+ 
+#show-title {
+  color: white;
+  -webkit-text-stroke-width: .1px;
+  -webkit-text-stroke-color: black;
+  font-family: VCR1;
+  font-size: 80px;
+
+}
+
+.show_container {
+
+height:500px;
+width:900px; 
+background-color:transparent;
+border:2.5px solid transparent;
+position:absolute;
+margin: auto;  
+left:0;
+right: 0;
+top: 0;
+bottom: 0;
+
+text-align: center;
+
+
+}
+
+.D__row {
+    width: 900px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    font-family: VCR1;
+    font-size: 16px;
+}
+
+.D__row div {
+    display: inline-block;
+    width: 29%;
+    text-align: left;
+}
+
+.D__row .D__date {
+    width: 24%;
+}
+
+
+
+.D__row .D__location {
+    width: 25%;
+}
+
+.D__row .D__venue {
+    width: 35%;
+}
+.D__row .D__buy {
+    width: 10%;
+    text-align: right;
+}
+
+
+
+
+
+.music {
+
+  
+  position:absolute;
+  width: 100vw;
+  height: auto;
+  position:relative;
+  background-color:red;
+}
